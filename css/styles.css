@@ -224,39 +224,45 @@ ul {
 
 .container {
   width: 1200px;
-  margin-left: 215px;
+  margin-left: 200px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 1170px;
+  padding: 94px 15px;
+  margin: 0;
 }
 
-.navigation-description {
-  display: flex;
-  margin: 0px 371px 0px 93px;
+.border-header {
+  border-bottom: 1px solid;
+  border-color: var(--grey-color);
 }
 
 .heder-description {
+  padding: 24px 15px 25px 15px;
+}
+
+.header-section {
+  width: 1170px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid;
-  border-color: var(--grey-color);
-  padding: 24px 0px 25px 0px;
 }
 
+.navigation-description {
+  display: flex;
+}
 .main-menu {
   display: flex;
+  flex-direction: row;
   padding: 0px;
   gap: 46px;
 }
 
 .contact {
   display: flex;
+  flex-direction: row;
   gap: 50px;
   padding: 0;
 }
@@ -308,6 +314,7 @@ p {
   align-content: center;
   gap: 10px;
 }
+
 h2 {
   margin: 0;
 }
@@ -321,11 +328,14 @@ h2 {
   gap: 50px;
   text-align: center;
   align-items: center;
+  padding-top: 0;
 }
 
 .work-specification {
+  width: 1200px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -337,25 +347,32 @@ h2 {
   text-align: center;
   align-items: center;
 }
-.team li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+
 .team li figure {
   margin: 0;
 }
 
-.work-specification {
-  display: flex;
-}
-
 .team {
+  width: 1170px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
 
-/* portfolio site */
+.team li figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 0;
+}
+
+.main-portfolio {
+  margin-right: 0;
+}
+.portfolio-style {
+  width: 1170px;
+}
 
 .button-description {
   margin-bottom: 50px;
@@ -376,7 +393,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   gap: 30px;
   flex-basis: calc((100%-60px) / 3);
 }
@@ -390,30 +406,14 @@ h2 {
 .portfolio li figure {
   margin: 0;
   text-align: left;
-  
 }
 
-.portfolio-title {
-  margin-bottom: 4px;
-  margin-top: 0;
-}
-.portfolio-subtitle {
-  margin: 4px 0;
-}
-
-.portfolio li figure figcaption {
+.portfolio-subject {
   padding: 20px 24px;
   display: flex;
-
   flex-direction: column;
   justify-content: flex-start;
   gap: 4px;
-}
-
-/* footer */
-
-.footer-logo {
-  margin: 0 0 20px 0;
 }
 
 .addres {
@@ -424,5 +424,11 @@ h2 {
 }
 
 .footer-style {
-  padding: 60px 0px 60px 0px;
+  padding: 60px 0px 60px 15px;
+}
+
+.footer-style .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
